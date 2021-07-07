@@ -11,11 +11,7 @@
    user-select: none;
 }
 .stats-div{
-   position: fixed;
-  top: 10%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+
 }
 body { background: linear-gradient(#64e6d5, #9198e5); color: rgb(44, 44, 44); margin:auto; text-align: center;}
 
@@ -32,26 +28,14 @@ body { background: linear-gradient(#64e6d5, #9198e5); color: rgb(44, 44, 44); ma
    cursor: pointer;
 }
 
-h2{
-   position: fixed;
-   top: 50%;
-   left: 28%;
-   /* bring your own prefixes */
-   transform: translate(-50%, -50%);
+.lives{
+display: inline;
+color: chartreuse;
 }
 h3{
-   position: fixed;
-   top: 50%;
-   left: 72%;
-   /* bring your own prefixes */
-   transform: translate(-50%, -50%);
+
 }
 .difficulty-div{
-   position: fixed;
-  top: 20%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
 }
 .difficulty{
    color: gree;
@@ -83,10 +67,7 @@ span{
    margin: 5px;
 }
 
-table {position: fixed;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%); text-align: center; margin: auto; padding: 3px; background-color: rosybrown;}
+table { text-align: center; margin: auto; padding: 3px; background-color: rosybrown;}
 .cell {
    user-select: none; /* supported by Chrome and Opera */
    -webkit-user-select: none; /* Safari */
@@ -100,7 +81,9 @@ table {position: fixed;
      margin: 80px; 
      padding: 10px;
       text-align: center;
-       background-color: grey; }
+       background-color: grey; 
+      width: 20px;
+   height: 20px;}
 .lighted{
    visibility:hidden
 }
@@ -116,26 +99,14 @@ table {position: fixed;
 }
 
 .safe-clicks{
-   position: fixed;
-  top: 25%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+   
 }
 .safe-clicks1{
-   position: fixed;
-  top: 32%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+   
 }
 
 .safe-clicks2{
-   position: fixed;
-  top: 25%;
-  left: 120%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+   
 }
 
 button img{
@@ -161,11 +132,7 @@ button.hint{
    border: hidden;
 }
 .hints{
-   position: fixed;
-  top: 87%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+
 }
 
 .shadow{background-color: black;}
@@ -205,16 +172,7 @@ button.hint{
    transition: 1s ease-in-out;
  }
  
- svg {
-   position: absolute;
-   left: 0;
-   top: 0;
-   fill: none;
-   stroke: #fff;
-   stroke-dasharray: 150 480;
-   stroke-dashoffset: 150;
-   transition: 1s ease-in-out;
- }
+ 
  
  .btn:hover {
    transition: 1s ease-in-out;
