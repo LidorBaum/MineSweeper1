@@ -15,6 +15,14 @@
 }
 body { background: linear-gradient(#64e6d5, #9198e5); color: rgb(44, 44, 44); margin:auto; text-align: center;}
 
+.wrapping-table {
+   justify-items: center;
+   display: flex;
+   justify-content: space-around;
+   width: 50%;
+   margin: auto;
+   justify-content: center;
+   align-items: center;}
 .stats{
    text-align: center;
    margin:auto;
@@ -29,9 +37,15 @@ body { background: linear-gradient(#64e6d5, #9198e5); color: rgb(44, 44, 44); ma
 }
 
 .lives{
-display: inline;
+display: inline-block;
 color: chartreuse;
+/* justify-self: center; */
 }
+
+.safe-clicks-div {
+   display: inline-block;
+}
+
 h3{
 
 }
@@ -67,7 +81,9 @@ span{
    margin: 5px;
 }
 
-table { text-align: center; margin: auto; padding: 3px; background-color: rosybrown;}
+table { text-align: center; margin: auto; padding: 3px; background-color: rosybrown;
+   display: inline-block;
+}
 .cell {
    user-select: none; /* supported by Chrome and Opera */
    -webkit-user-select: none; /* Safari */

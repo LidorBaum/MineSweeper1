@@ -18,19 +18,19 @@
   <button class="difficulty medium" onclick="setDifficulty(8)">Medium 8X8</button>
   <button class="difficulty expert" onclick="setDifficulty(12)">Expert 12X12</button>
 </div>
-  <h3>best score: <span></span></h3>
-  <div style="display: inline">
-  <table>
-    <tbody class="gameboard" style="display: block"></tbody>
-  </table>
+<h3>best score: <span></span></h3>
+<div class="wrapping-table">
   <div class="lives">
-  <h2>lives: <span></span></h2>
-  <h2 id= "lives-emj"></h2>
+    <h2>lives: <span></span></h2>
+    <h2 id= "lives-emj"></h2>
   </div>
-  <div>
+  <table>
+    <tbody class="gameboard"></tbody>
+  </table>
+  <div class="safe-clicks-div">
     <p class="safe-clicks">safe clicks left: <span id = "safe-clicks" class="safe-clicks2"></span></p>
-  <button class="safe-clicks1" onclick="safeClick()">SAFE CLICK</button>
-</div>
+    <button class="safe-clicks1" onclick="safeClick()">SAFE CLICK</button>
+  </div>
 </div>
 <div class="hints">
   <button class="hint bw" id="hint1" onclick="getHint(id)"><img src="img/1.png"></button>
