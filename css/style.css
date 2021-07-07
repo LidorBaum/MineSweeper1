@@ -10,10 +10,18 @@
    -ms-user-select: none;
    user-select: none;
 }
+html{
+   height: 100%;
+}
 .stats-div{
 
 }
-body { background: linear-gradient(#64e6d5, #9198e5); color: rgb(44, 44, 44); margin:auto; text-align: center;}
+body {
+   height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     background: linear-gradient(#64e6d5, #9198e5); color: rgb(44, 44, 44); margin:auto; text-align: center;}
 
 .wrapping-table {
    justify-items: center;
@@ -22,7 +30,8 @@ body { background: linear-gradient(#64e6d5, #9198e5); color: rgb(44, 44, 44); ma
    width: 50%;
    margin: auto;
    justify-content: center;
-   align-items: center;}
+   align-items: center;
+}
 .stats{
    text-align: center;
    margin:auto;
