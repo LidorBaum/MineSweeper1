@@ -1,0 +1,162 @@
+* {
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in Internet Explorer 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+}
+body { background: linear-gradient(#64e6d5, #9198e5); color: rgb(44, 44, 44); margin:auto; text-align: center;}
+
+.stats{
+   text-align: center;
+   margin:auto;
+   
+   color:blueviolet;
+   min-width: 100px;
+   display: inline-block;
+}
+
+.state-button{
+   cursor: pointer;
+}
+
+.difficulty{
+   color: gree;
+   border: 0px;
+   border-radius: 10%;
+   min-width: 40px;
+   min-height: 20px;
+   padding: 10px 10px 10px 10px;
+   margin: 10px;
+   margin-top: 0px;
+   cursor: pointer;
+}
+.beginner{
+   background-color: rgb(120, 243, 192);
+   box-shadow: 5px;
+}
+.medium{
+   background-color: rgb(214, 247, 67);
+   box-shadow: 5px;
+}
+.expert{
+   background-color: rgb(243, 39, 117);
+   box-shadow: 5px;
+}
+
+span{
+   display: inline-block;
+   padding: 5px;
+   margin: 5px;
+}
+
+table { text-align: center; margin: auto; padding: 3px; background-color: rosybrown;}
+.cell {
+   user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+ font-size:18px; margin: 80px; padding: 10px; width:20px; height:20px;text-align: center; background-color: grey; }
+.lighted{
+   visibility:hidden
+}
+.red-bgc{
+   background-color: crimson;
+}
+.bold{
+   background-color: rgba(243, 240, 85, 0.507);
+}
+
+#lives-emj{
+   margin-top: -35px;
+}
+
+
+button img{
+   margin-top: 20px;
+   padding: 20px;
+   max-width: 40px;
+   transition: all .2s linear;
+   display: block;
+   cursor: pointer;
+
+}
+button img:hover{
+   max-width: 50px;
+   transition: all .2s linear;
+}
+.bw{
+   -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+button.hint{
+   margin-top: 10px;
+   background-color: rgba(255, 255, 255, 0);
+   border: hidden;
+}
+
+.shadow{background-color: black;}
+.animated {
+    background-image: url(/css/images/logo.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+ }
+ 
+ @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+ }
+
+ 
+.btn {
+   width: 180px;
+   height: 60px;
+   cursor: pointer;
+   background: transparent;
+   border: 1px solid #91C9FF;
+   outline: none;
+   transition: 1s ease-in-out;
+ }
+ 
+ svg {
+   position: absolute;
+   left: 0;
+   top: 0;
+   fill: none;
+   stroke: #fff;
+   stroke-dasharray: 150 480;
+   stroke-dashoffset: 150;
+   transition: 1s ease-in-out;
+ }
+ 
+ .btn:hover {
+   transition: 1s ease-in-out;
+   background: #4F95DA;
+ }
+ 
+ .btn:hover svg {
+   stroke-dashoffset: -480;
+ }
+ 
+
+

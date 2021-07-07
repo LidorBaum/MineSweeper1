@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mine Sweeper</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body onload="initGame()">
+  <header>
+  </header>
+  <!-- <h1 >Mine Sweeper</h1> -->
+  <div>
+    <span class="stats flags"></span>
+    <span class="stats state-button" onclick= "initGame()">😄</span>
+    <span class="stats timer"><span class="time" id="display">00:00:00</span>
+  </div>
+  <button class="difficulty beginner" onclick="setDifficulty(4)">Beginner 4X4</button>
+  <button class="difficulty medium" onclick="setDifficulty(8)">Medium 8X8</button>
+  <button class="difficulty expert" onclick="setDifficulty(12)">Expert 12X12</button>
+  <h3>best score: <span></span></h3>
+  <table>
+    <tbody class="gameboard" style="display: block"></tbody>
+  </table>
+  <h2>lives: <span></span></h2>
+  <h2 id= "lives-emj"></h2>
+  <div>
+    <p>you have left <span id="safe-clicks"></span> safe clicks</p>
+  <button onclick="safeClick()">SAFE CLICK</button>
+</div>
+  <button class="hint bw" id="hint1" onclick="getHint(id)"><img src="img/1.png"></button>
+  <button class="hint bw" id="hint2"onclick="getHint(id)"><img src="img/1.png"></button>
+  <button class="hint bw" id="hint3"onclick="getHint(id)"><img src="img/1.png"></button>
+
+  <script src="js/util.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
