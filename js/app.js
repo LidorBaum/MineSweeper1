@@ -51,7 +51,7 @@ function initGame() {        //call when page loads
     document.querySelector("h2 span").innerText = gGame.lives
     document.getElementById("lives-emj").innerText = ("💘".repeat(gGame.lives))
     document.querySelector("h3 span").innerText = gGame.bestScores[gLevel.size]
-    document.getElementById("safe-clicks").innerText = gGame.safeClicks
+    document.getElementById("safe-clicks").innerText ="       " +  gGame.safeClicks
 }
 function setDifficulty(size) {
     switch (size) {
@@ -270,7 +270,7 @@ function cellMarked(posArr) {        //called on right click
 function safeClick(){
     if(gGame.safeClicks === 0) return
     gGame.safeClicks--
-    document.getElementById("safe-clicks").innerText = gGame.safeClicks
+    document.getElementById("safe-clicks").innerText = "        " + gGame.safeClicks
     var location = null
     while(!location){
     var num = Math.floor(Math.random() * gLevel.size **2)
